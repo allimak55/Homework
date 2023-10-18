@@ -12,6 +12,7 @@ int main(){
     std::cin >> x;
     y = ((x - a)*(d - c)) / (b - a) ;
     std::cout << "Corresponding image = " << y << "\n"; 
+    return 0;
 
 
 }
