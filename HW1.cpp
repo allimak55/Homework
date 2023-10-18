@@ -1,20 +1,18 @@
-#include  <iostream>
-#include <cmath>
+#include <iostream>
 
 int main(){
-    double a, b, c;
-    double x1, x2, D;
-    std::cout << "Please enter the coefficients of the equation\n";
+    int a, b, c, d, x , A, B, y;
+    std::cout << "Please, enter the first segment \n";
     std::cin >> a;
     std::cin >> b;
+    std::cout << "Please, enter the second segment \n";
     std::cin >> c;
-    D = b * b - 4 * a * c;
-    if (D < 0){
-        std::cout << "Sorry, no roots\n";
-    } else if (D == 0){
-        std::cout << "One root = " << -b / (2 * a);
-    } else {
-        std::cout << "One root = " << (-b + sqrt(D)) / (2 * a) << "\n";
-        std::cout << "Two root = " << (-b - sqrt(D)) / (2 * a) << "\n";
-    }
+    std::cin >> d;
+    std::cout << "Please, enter a point from the first segment \n";
+    std::cin >> x;
+    A = (b - a) / x;
+    y = (d - c) / A;
+    std::cout << "Corresponding image = " << y << "\n"; 
+
+
 }
