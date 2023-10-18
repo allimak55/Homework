@@ -2,7 +2,7 @@
 #include <cmath>
 
 int main(){
-    int x, y, R, r;
+    double x, y, R, r;
     std::cout << "Enter point coordinates \n";
     std::cin >> x;
     std::cin >> y;
@@ -19,5 +19,5 @@ int main(){
     } else {
         std::cout << "The point doesn't fit into the ring";
     }
-
+    return 0;
 }
