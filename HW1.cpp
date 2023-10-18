@@ -1,7 +1,7 @@
 #include <iostream>
 
 int main(){
-    int a, b, c, d, x , A, B, y;
+    double a, b, c, d, x , A, B, y;
     std::cout << "Please, enter the first segment \n";
     std::cin >> a;
     std::cin >> b;
@@ -10,8 +10,7 @@ int main(){
     std::cin >> d;
     std::cout << "Please, enter a point from the first segment \n";
     std::cin >> x;
-    A = (b - a) / x;
-    y = (d - c) / A;
+    y = ((x - a)*(d - c)) / (b - a) ;
     std::cout << "Corresponding image = " << y << "\n"; 
 
 
