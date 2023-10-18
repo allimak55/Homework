@@ -17,4 +17,5 @@ int main(){
         std::cout << "One root = " << (-b + sqrt(D)) / (2 * a) << "\n";
         std::cout << "Two root = " << (-b - sqrt(D)) / (2 * a) << "\n";
     }
+    return 0;
 }
